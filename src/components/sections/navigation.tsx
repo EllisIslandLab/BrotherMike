@@ -69,9 +69,12 @@ export default function Navigation() {
             </li>
           </ul>
           
-          <button 
+          <button
             className="md:hidden flex flex-col space-y-1"
             onClick={toggleMenu}
+            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             <span className={`w-6 h-0.5 bg-foreground transition-transform ${isMenuOpen ? 'transform rotate-45 translate-y-1.5' : ''}`}></span>
             <span className={`w-6 h-0.5 bg-foreground transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
@@ -80,7 +83,7 @@ export default function Navigation() {
         </div>
         
         {isMenuOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden pb-4" id="mobile-menu">
             <ul className="flex flex-col space-y-4">
               <li>
                 <button 

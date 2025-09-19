@@ -169,7 +169,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
             <h3 className="text-2xl font-bold text-primary">Book Your Free 15-Minute Consultation</h3>
             <button 
               onClick={onClose}
-              className="text-3xl text-foreground/60 hover:text-foreground transition-colors"
+              className="text-3xl text-foreground/80 hover:text-foreground transition-colors"
             >
               ×
             </button>
@@ -381,7 +381,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
             <div className="space-y-4 pt-6 border-t">
               <div>
                 <h4 className="text-lg font-semibold text-primary">Optional but Helpful</h4>
-                <p className="text-sm text-foreground/70 mb-4">These fields help us better prepare for your consultation, but are not required.</p>
+                <p className="text-sm text-foreground/85 mb-4">These fields help us better prepare for your consultation, but are not required.</p>
               </div>
               
               <div className="grid md:grid-cols-2 gap-4">

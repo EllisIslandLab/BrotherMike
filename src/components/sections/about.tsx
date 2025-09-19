@@ -9,7 +9,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto space-y-8">
           <div>
             <h3 className="text-xl font-semibold text-primary mb-4">Background</h3>
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
+            <div className="space-y-4 text-foreground/90 leading-relaxed">
               <p>
                 Michael Ellis was born in Alexandria, VA, in 1981 and moved to Mentor, OH, a suburb of Cleveland, in 1985. 
                 He grew up in a loving home with his parents and two younger brothers.
@@ -44,7 +44,7 @@ export default function About() {
           
           <div>
             <h3 className="text-xl font-semibold text-primary mb-4">Personal Life</h3>
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-foreground/90 leading-relaxed">
               Michael married Jennifer in 2003, and together they have raised five wonderful children, who now range in age from 11 to 19. 
               Reflecting on his family&apos;s impact, Michael shares, &quot;My family and children take up the bulk of my time, and I am grateful 
               for their support. They have given me invaluable experience that strengthens my ability to help others as a counselor.&quot;

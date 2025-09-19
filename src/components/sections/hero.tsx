@@ -24,36 +24,37 @@ export default function Hero() {
               committed to helping you broaden your perspective and discover peace and purpose 
               as you move forward in your life.
             </p>
-            <button 
+            <button
               onClick={scrollToBooking}
-              className="px-8 py-3 rounded-lg transition-all duration-300 font-medium text-white cursor-pointer hover:transform hover:-translate-y-1"
-              style={{backgroundColor: 'var(--button-secondary)', boxShadow: '0 5px 15px rgba(139, 111, 71, 0.5)'}}
+              className="px-6 py-3 rounded-lg transition-all duration-300 font-medium text-white cursor-pointer hover:transform hover:-translate-y-1"
+              style={{backgroundColor: 'var(--button-primary)', boxShadow: '0 3px 10px rgba(90, 107, 131, 0.3)'}}
               onMouseOver={(e) => {
                 const target = e.target as HTMLButtonElement;
-                target.style.backgroundColor = 'var(--button-secondary-hover)';
+                target.style.backgroundColor = 'var(--button-primary-hover)';
                 target.style.transform = 'translateY(-4px)';
-                target.style.boxShadow = '0 7px 20px rgba(139, 111, 71, 0.6)';
+                target.style.boxShadow = '0 5px 15px rgba(90, 107, 131, 0.4)';
               }}
               onMouseOut={(e) => {
                 const target = e.target as HTMLButtonElement;
-                target.style.backgroundColor = 'var(--button-secondary)';
+                target.style.backgroundColor = 'var(--button-primary)';
                 target.style.transform = 'translateY(0)';
-                target.style.boxShadow = '0 5px 15px rgba(139, 111, 71, 0.5)';
+                target.style.boxShadow = '0 3px 10px rgba(90, 107, 131, 0.3)';
               }}
             >
               Learn More
             </button>
           </div>
           <div className="flex-1 flex justify-center">
-            <Image 
-              src="/images/Boat_on_lake.jpg" 
-              alt="Peaceful therapy environment" 
+            <Image
+              src="/images/Boat_on_lake.jpg"
+              alt="Peaceful therapy environment"
               width={750}
               height={456}
               className="rounded-lg shadow-lg"
               priority
-              fetchPriority="high"
-              sizes="(max-width: 768px) 100vw, 750px"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkbHw8f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyEH4Q6LdGuFVHzTVEsN7xXPDQVdBJN1OGdR5rwrN4RZP8AhGWz5cL7/t1wJqoePRVZENcMp1gN0NjCDqxC8/ZOAeOONOW1QKiRTdmQJ6z7ZTNm+dOqIYWWJyTcPmQ+yJWmBnkfI3U/RXfwP//Z"
+              sizes="(max-width: 640px) 90vw, (max-width: 768px) 75vw, (max-width: 1024px) 50vw, 750px"
             />
           </div>
         </div>

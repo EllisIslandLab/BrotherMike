@@ -46,7 +46,7 @@ export default function LocationModal({ isOpen, onClose }: LocationModalProps) {
             <h3 className="text-2xl font-bold text-primary">Office Location</h3>
             <button 
               onClick={onClose}
-              className="text-3xl text-foreground/60 hover:text-foreground transition-colors"
+              className="text-3xl text-foreground/80 hover:text-foreground transition-colors"
             >
               ×
             </button>
