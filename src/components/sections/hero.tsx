@@ -52,7 +52,7 @@ export default function Hero() {
               height={456}
               className="rounded-lg shadow-lg"
               priority
-              quality={85}
+              quality={80}
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkbHw8f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyEH4Q6LdGuFVHzTVEsN7xXPDQVdBJN1OGdR5rwrN4RZP8AhGWz5cL7/t1wJqoePRVZENcMp1gN0NjCDqxC8/ZOAeOONOW1QKiRTdmQJ6z7ZTNm+dOqIYWWJyTcPmQ+yJWmBnkfI3U/RXfwP//Z"
               sizes="(max-width: 640px) 320px, (max-width: 768px) 480px, (max-width: 1024px) 600px, 750px"
