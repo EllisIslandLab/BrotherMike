@@ -1,12 +1,13 @@
 'use client';
 
 import Image from 'next/image';
+import { useCallback } from 'react';
 
 export default function Hero() {
-  const scrollToBooking = () => {
+  const scrollToBooking = useCallback(() => {
     const element = document.getElementById('booking');
     element?.scrollIntoView({ behavior: 'smooth' });
-  };
+  }, []);
 
   return (
     <section id="home" className="min-h-screen flex items-center pt-20" style={{background: 'linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-middle) 50%, var(--hero-gradient-end) 100%)'}}>
@@ -26,20 +27,7 @@ export default function Hero() {
             </p>
             <button
               onClick={scrollToBooking}
-              className="px-6 py-3 rounded-lg transition-all duration-300 font-medium text-white cursor-pointer hover:transform hover:-translate-y-1"
-              style={{backgroundColor: 'var(--button-primary)', boxShadow: '0 3px 10px rgba(90, 107, 131, 0.3)'}}
-              onMouseOver={(e) => {
-                const target = e.target as HTMLButtonElement;
-                target.style.backgroundColor = 'var(--button-primary-hover)';
-                target.style.transform = 'translateY(-4px)';
-                target.style.boxShadow = '0 5px 15px rgba(90, 107, 131, 0.4)';
-              }}
-              onMouseOut={(e) => {
-                const target = e.target as HTMLButtonElement;
-                target.style.backgroundColor = 'var(--button-primary)';
-                target.style.transform = 'translateY(0)';
-                target.style.boxShadow = '0 3px 10px rgba(90, 107, 131, 0.3)';
-              }}
+              className="px-6 py-3 rounded-lg transition-all duration-300 font-medium text-white cursor-pointer hover:transform hover:-translate-y-1 hero-cta-button"
             >
               Learn More
             </button>
